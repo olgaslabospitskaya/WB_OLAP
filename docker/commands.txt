@@ -1,0 +1,26 @@
+sudo apt install docker-compose
+sudo groupadd docker
+sudo usermod -aG docker olya
+sudo chmod 666 /var/run/docker.sock
+
+Clickhouse:
+docker run -d --name ch clickhouse/clickhouse-server
+docker stop ch
+docker rm ch
+docker run --rm -d --name ch --cpus="1" --memory="512m" -p 8123:8123 -v ch_files:/home/olya/Work/WB/docker_files/clickhouse/ clickhouse/clickhouse-server
+docker volume inspect ch_files
+docker stats
+docker stop ch
+
+
+Postgres:
+docker run -d --name pg --cpus="1" --restart always -p 5432:5432 -e POSTGRES_PASSWORD=postgres -v pg_files:/home/olya/Work/WB/docker_files/postgres/ postgres
+docker ps -a
+docker stop pg
+
+Задание 2
+docker-compose build
+docker-compose up -d
+docker-compose ps
+docker-compose images
+docker-compose down  
