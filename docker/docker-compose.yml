@@ -1,0 +1,33 @@
+version : '3'
+
+services:
+  ch:
+    image: clickhouse/clickhouse-server
+    restart: unless-stopped
+    cpus: "1.0"
+    deploy:
+      resources:
+        limits:
+          memory: 512m
+    ports:
+      - "8123:8123"
+    volumes:
+      - /home/olya/Work/WB/docker_files/clickhouse/
+    depends_on:
+      pg:
+        condition: service_started
+
+  pg:
+    image: postgres
+    restart: on-failure:2
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    cpus: "1.0"
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home/olya/Work/WB/docker_files/postgres
+
+   
