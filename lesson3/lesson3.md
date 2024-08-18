@@ -10,4 +10,5 @@
 На линукс установить Offcet Explorer не удалось, поэтому установила альтернативный вариант
 ![image](https://github.com/user-attachments/assets/fc539162-4eb7-4958-9780-454ee91e9a8d)
 
-5)
+5)![image](https://github.com/user-attachments/assets/b32ac0a9-79dd-4c1d-b6a7-3a7826f9b2fc)
+
