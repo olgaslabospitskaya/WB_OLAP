@@ -1,0 +1,2 @@
+docker network connect lesson7_default docker_files_ch_1
+docker network connect lesson7_default docker_files_pg_1
