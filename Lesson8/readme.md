@@ -17,4 +17,5 @@ group by
 	dt_hour;
 
 
-![image](https://github.com/user-attachments/assets/2835c66b-cdff-421a-94ff-b9497063523e)
+![image](https://github.com/user-attachments/assets/9169cc06-8586-4b8b-866b-e001b7aabfed)
+
