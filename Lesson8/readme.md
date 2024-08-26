@@ -1,4 +1,5 @@
-```create table default.test_dq engine = MergeTree
+```
+create table default.test_dq engine = MergeTree
 order by
 dt_hour as
 SELECT
