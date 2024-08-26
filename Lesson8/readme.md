@@ -16,6 +16,6 @@ FROM
 group by
 	dt_hour;
 
-
+```
 ![image](https://github.com/user-attachments/assets/9169cc06-8586-4b8b-866b-e001b7aabfed)
 
