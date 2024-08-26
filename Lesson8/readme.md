@@ -15,3 +15,6 @@ FROM
 	ShkExciseCrpt_log
 group by
 	dt_hour;
+
+
+![image](https://github.com/user-attachments/assets/2835c66b-cdff-421a-94ff-b9497063523e)
