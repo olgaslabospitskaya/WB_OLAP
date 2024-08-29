@@ -10,7 +10,7 @@ create table default.shk_excise_crpt_log
     product_line_name String,
     entry             LowCardinality(String)
 )
-    engine = MergeTree;
+    engine = MergeTree order by shk_id;
 
 ```
 
